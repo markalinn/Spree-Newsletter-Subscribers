@@ -1,21 +1,21 @@
-SpreeNewsletterSubscribers
-==========================
+Spree Newsletter Subscribers
+============================
 
-Introduction goes here.
+This extension is just a simple administration screen and partial that can be used in your views to gather email addresses in a local database table.
 
+Installation
+============
 
-Example
-=======
+* Add "gem 'spree_newsletter_subscribers', :git => 'git://github.com/markalinn/Spree-Newsletter-Subscribers.git'" to your Gemfile
+* Run "bundle"
+* Run "rails g spree_newsletter_subscribers:install" and select "Y" to run the migrations
+* And.....Insert partial into views where appropriate 
 
-Example goes here.
+Todo
+====
 
-Testing
--------
+* Ability to unsubscibe
+* Tests
+* Everything else! :-)
 
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
-
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
-
-Copyright (c) 2012 [name of extension creator], released under the New BSD License
+Copyright (c) 2012 Mark Linn, released under the New BSD License
