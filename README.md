@@ -18,4 +18,4 @@ Todo
 * Tests
 * Everything else! :-)
 
-Copyright (c) 2012 Mark Linn, released under the New BSD License
+Copyright (c) 2012 XWC Solutions, released under the New BSD License
