@@ -1,0 +1,6 @@
+<h1><%= t(:editing_newsletter_subsciber) %></h1>
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @newsletter_subscriber } %>
+<%= form_for [:admin, @newsletter_subscriber] do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f } %>
+  <%= render :partial => 'spree/admin/shared/new_resource_links' %>
+<% end %>

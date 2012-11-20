@@ -1,0 +1,29 @@
+<div class="toolbar" data-hook="toolbar">
+  <ul class="actions">
+    <li>
+      <%= button_link_to t(:new_newsletter_subscriber), new_object_url, :icon => 'add' %>
+    </li>
+  </ul>
+  <br class="clear" />
+</div>
+
+<h1><%= t(:newsletter_subscribers) %></h1>
+<table class="index">
+  <thead>
+    <tr data-hook="categories_header">
+      <th><%= t(:email) %></th>
+      <th><%= t(:action) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @newsletter_subscribers.each do |newsletter_subscriber|%>
+    <tr id="<%= spree_dom_id newsletter_subscriber %>" data-hook="newsletter_subscriber_row">
+      <td style="width:350px;"><%= newsletter_subscriber.email %></td>
+      <td>
+        <%= link_to_edit newsletter_subscriber %> &nbsp;
+        <%= link_to_delete newsletter_subscriber %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
